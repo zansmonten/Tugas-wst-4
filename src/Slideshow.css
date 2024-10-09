@@ -1,0 +1,53 @@
+/* src/Slideshow.css */
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  /* Prefiks untuk kompatibilitas dengan berbagai browser */
+  -webkit-user-select: none; /* Safari & Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer & Edge */
+  user-select: none; /* Standar modern */
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Gaya untuk memastikan gambar selalu memenuhi kontainer dengan aspek rasio yang benar */
+.slide-image {
+  width: 100%; /* Lebar penuh sesuai dengan kontainer */
+  height: 300px; /* Tinggi tetap */
+  object-fit: cover; /* Mengisi kontainer dan menjaga proporsi, memotong bagian gambar yang tidak pas */
+  border-radius: 10px;
+}

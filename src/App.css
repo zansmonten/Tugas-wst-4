@@ -36,3 +36,553 @@
     transform: rotate(360deg);
   }
 }
+
+/* src/App.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.home-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home-container h2 {
+  color: #007bff;
+}
+
+.home-container p {
+  color: #666;
+}
+
+/* src/App.css */
+
+/* Header */
+.home-header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Navbar */
+.home-navbar {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.home-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.home-navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.home-navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Home Container */
+.home-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.home-container h2 {
+  color: #007bff;
+}
+
+.home-container p {
+  color: #666;
+}
+
+/* src/App.css */
+
+/* Header */
+.home-header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.logout-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.logout-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Navbar */
+.home-navbar {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.home-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.home-navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.home-navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Home Container */
+.home-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.home-container h2 {
+  color: #007bff;
+}
+
+.home-container p {
+  color: #666;
+}
+
+/* src/App.css */
+
+/* Table Styling */
+.room-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.room-table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+
+.room-table th,
+.room-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.room-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.room-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.room-table tr:hover {
+  background-color: #ddd;
+}
+
+.room-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #007bff;
+  color: white;
+}
+
+/* src/App.css */
+
+/* Button Styling */
+.room-table button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.room-table button {
+  background-color: #007bff; /* Warna tombol Edit */
+  color: white;
+}
+
+.room-table button:hover {
+  background-color: #0056b3; /* Warna tombol Edit saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+.room-table button:nth-child(2) {
+  background-color: #ff4d4d; /* Warna tombol Delete */
+}
+
+.room-table button:nth-child(2):hover {
+  background-color: #ff1a1a; /* Warna tombol Delete saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+/* Tambahkan gaya untuk form input */
+.room-container form input {
+  margin: 10px 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(25% - 22px); /* Mengatur lebar input agar sesuai */
+}
+
+.room-container form button {
+  background-color: #28a745; /* Warna tombol Add/Update */
+  color: white;
+  padding: 10px 15px;
+}
+
+.room-container form button:hover {
+  background-color: #218838; /* Warna tombol Add/Update saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+/* src/App.css */
+
+/* Table Styling for Students */
+.student-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.student-table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+
+.student-table th,
+.student-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.student-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.student-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.student-table tr:hover {
+  background-color: #ddd;
+}
+
+.student-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #007bff;
+  color: white;
+}
+
+/* Styling for Buttons in Student Table */
+.student-table button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.student-table button {
+  background-color: #007bff; /* Warna tombol Edit */
+  color: white;
+}
+
+.student-table button:hover {
+  background-color: #0056b3; /* Warna tombol Edit saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+.student-table button:nth-child(2) {
+  background-color: #ff4d4d; /* Warna tombol Delete */
+}
+
+.student-table button:nth-child(2):hover {
+  background-color: #ff1a1a; /* Warna tombol Delete saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+/* Tambahkan gaya untuk form input */
+.student-container form input {
+  margin: 10px 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(30% - 22px); /* Mengatur lebar input agar sesuai */
+}
+
+.student-container form button {
+  background-color: #28a745; /* Warna tombol Add/Update */
+  color: white;
+  padding: 10px 15px;
+}
+
+.student-container form button:hover {
+  background-color: #218838; /* Warna tombol Add/Update saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+/* src/App.css */
+
+/* Table Styling for Lecturers */
+.lecturer-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.lecturer-table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+
+.lecturer-table th,
+.lecturer-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.lecturer-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.lecturer-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.lecturer-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Styling for Buttons in Lecturer Table */
+.lecturer-table button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.lecturer-table button {
+  background-color: #007bff; /* Warna tombol Edit */
+  color: white;
+}
+
+.lecturer-table button:hover {
+  background-color: #0056b3; /* Warna tombol Edit saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+.lecturer-table button:nth-child(2) {
+  background-color: #ff4d4d; /* Warna tombol Delete */
+}
+
+.lecturer-table button:nth-child(2):hover {
+  background-color: #ff1a1a; /* Warna tombol Delete saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+/* Tambahkan gaya untuk form input */
+.lecturer-container form input {
+  margin: 10px 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(30% - 22px); /* Mengatur lebar input agar sesuai */
+}
+
+.lecturer-container form button {
+  background-color: #28a745; /* Warna tombol Add/Update */
+  color: white;
+  padding: 10px 15px;
+}
+
+.lecturer-container form button:hover {
+  background-color: #218838; /* Warna tombol Add/Update saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+/* src/App.css */
+
+/* Table Styling for Courses */
+.course-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.course-table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+
+.course-table th,
+.course-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.course-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.course-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.course-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Styling for Buttons in Course Table */
+.course-table button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.course-table button {
+  background-color: #007bff; /* Warna tombol Edit */
+  color: white;
+}
+
+.course-table button:hover {
+  background-color: #0056b3; /* Warna tombol Edit saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+.course-table button:nth-child(2) {
+  background-color: #ff4d4d; /* Warna tombol Delete */
+}
+
+.course-table button:nth-child(2):hover {
+  background-color: #ff1a1a; /* Warna tombol Delete saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+/* Tambahkan gaya untuk form input */
+.course-container form input {
+  margin: 10px 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(30% - 22px); /* Mengatur lebar input agar sesuai */
+}
+
+.course-container form button {
+  background-color: #28a745; /* Warna tombol Add/Update */
+  color: white;
+  padding: 10px 15px;
+}
+
+.course-container form button:hover {
+  background-color: #218838;
+}
